@@ -1,0 +1,19 @@
+server:
+  port: 7899
+
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  datasource:
+    url: jdbc:mysql://localhost:3306/ssmemail?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapper-locations: classpath*:com/yj/mapper/*Mapper.xml
+  type-aliases-package: com.yj.entity
+  configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

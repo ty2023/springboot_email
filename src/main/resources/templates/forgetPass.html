@@ -1,0 +1,25 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/static/jquery/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="/static/js/forgetPass.js"></script>
+</head>
+<body>
+<div align="center">
+    <form action="">
+        <table>
+            <tr>
+                <th>请输入用户名：</th>
+                <td><input type="text" name="username" id="username" ></td>
+                <td><span style="color: red" id="update_pass"></span></td>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="button" onclick="update_user_name()"  value="确定"></th>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

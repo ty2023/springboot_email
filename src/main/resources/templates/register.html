@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/static/jquery/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="/static/js/register.js"></script>
+</head>
+<body>
+<div align="center">
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th colspan="2">用户注册</th>
+            </tr>
+            <tr>
+                <th>
+                    <span style="color: red">*</span>
+                    用户名
+                </th>
+                <td><input type="text" name="username" id="username" required="required"></td>
+                <td><span style="color: red" id="span_name"></span></td>
+            </tr>
+            <tr>
+                <th>
+                    <span style="color: red">*</span>
+                    密码
+                </th>
+                <td><input type="password" name="password" id="password" required="required"></td>
+            </tr>
+            <tr>
+                <th>
+                    <span style="color: red">*</span>
+                    邮箱
+                </th>
+                <td><input type="email" name="email" id="email" required="required"></td>
+                <td><input type="button" id="checkEmail" value="发送验证码"></td>
+            </tr>
+            <tr>
+                <th>
+                    <span style="color: red">*</span>
+                    请输入验证码：
+                </th>
+                <td><input type="text" name="CheckedCode" id="CheckedCode" required="required"></td>
+                <td><span style="color: red" id="span_email"></span></td>
+            </tr>
+            <tr>
+                <th>
+                    <span style="color: red">*</span>
+                    年龄
+                </th>
+                <td><input type="text" name="age" id="age" required="required"></td>
+            </tr>
+            <tr>
+                <th>
+                    <span style="color: red">*</span>
+                    性别
+                </th>
+                <td>
+                    <input type="radio" checked name="sex" value="1">男
+                    <input type="radio" name="sex" value="0">女·
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <input type="button" onclick="submitbtn()" value="提交">
+                </th>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

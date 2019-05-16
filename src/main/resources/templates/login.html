@@ -1,0 +1,52 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="/static/jquery/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="/static/js/login.js"></script>
+</head>
+<body>
+<div align="center">
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th colspan="2">用户登录</th>
+            </tr>
+            <tr>
+                <th>用户名:</th>
+                <td>
+                    <input type="text" name="username" id="username">
+                </td>
+            </tr>
+            <tr>
+                <th>密码:</th>
+                <td>
+                    <input type="password" name="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <th>验证码</th>
+                <td>
+                    <input name="checkCode" id="checkCode" type="text">
+                </td>
+                <td> <img id="checkCode_img1" src="/commonController/checkCode" alt="点击刷新验证码"></td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <a href="/commonController/forget">
+                        忘记密码
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" onclick="loginSubmit()" value="提交">
+                </th>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
